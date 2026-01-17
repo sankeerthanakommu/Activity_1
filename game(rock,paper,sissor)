@@ -1,0 +1,29 @@
+import random
+while True:
+    print("hello! lets play a rock paper sisser game.")
+    user_choice=input("lets start the game enter your choice: ")
+    system=random.choice("rock","paper","sisser")
+    if user_choice==system:
+        print("THERE IS A TIE,both are selected same")
+    elif user_choice=="rock":
+        if system=="paper":
+            print("you loose paper covers rock.")
+        else:
+            print("you win! rock brakes sissor")
+    elif user_choice=="paper":
+        if system=="sissor":
+           print("you loose paper cuts sissor.")
+        else:
+            print("you win! paper covers rock")
+    elif user_choice=="sissor":
+        if system=="rock":
+            print("you loose! rock brakes sissor.")
+        else:
+            print("you win! sissor cut paper")
+    else:
+        print("invalid input make a proper input[rock/paper/sissor]")
+    lets_play=("common lets play again,say yes if you want(enter any other to stop playing)")
+    if lets_play!="yes":
+        print("ok then,lets play after some time")
+        break
+
